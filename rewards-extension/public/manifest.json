@@ -23,6 +23,14 @@
     "128": "img/icon-128.png"
   },
   "options_page": "options.html",
-  "permissions": ["activeTab"],
+  "host_permissions": ["cookies", "<all_urls>", "allow-scripts"],
+  "permissions": [
+    "activeTab",
+    "cookies",
+    "<all_urls>",
+    "*://*.example.com/*",
+    "tabs",
+    "allow-scripts"
+  ],
   "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
 }
